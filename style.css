@@ -13,10 +13,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: var(--secondary-color);
 }
 
@@ -113,7 +113,7 @@ nav {
   line-height: 1.5; /* Improved line height for better spacing */
   color: var(--text-color);
   margin-bottom: 1.5rem; /* Slightly reduced margin for better vertical spacing */
-  text-align: justify; /* Justify the text for a cleaner look */
+  text-align: justify; /* Justify the text for a cleaner look */ 
 }
 
 .content__container form {
@@ -128,7 +128,7 @@ nav {
   font-size: 0.8rem;
   outline: none;
   border: none;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .content__container button {

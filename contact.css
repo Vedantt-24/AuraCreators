@@ -22,35 +22,34 @@ body{
     color: #fff;
     font-weight: 500;
 }
-.box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
-    grid-template-areas: 
-      "form info"
-      "form map";
-    grid-gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .contact.form {
-    grid-area: form;
+.contact.form {
+    grid-area: form; /* Positions the element with class .contact.form into the grid area named "form" */
   }
   
   .contact.info {
-    grid-area: info;
+    grid-area: info; /* Positions the element with class .contact.info into the grid area named "info" */
   }
   
   .contact.map {
-    grid-area: map;
+    grid-area: map; /* Positions the element with class .contact.map into the grid area named "map" */
   }
-  
 .contact{
     padding: 40px;
     background-color: #fff;
     box-shadow:0 5px 35px rgba(0,0,0,0.15);
 }
+
+.box {
+    position: relative; /* Sets the position of the container to relative */
+    display: grid; /* Displays the container as a grid */
+    grid-template-columns: 2fr 1fr; /* Defines two columns, the first one twice the size of the second */
+    grid-template-rows: 5fr 4fr; /* Defines two rows, the first one five times the size of the second */
+    grid-template-areas: 
+      "form info" /* Defines the layout of the grid areas */
+      "form map";
+    grid-gap: 20px; /* Sets the gap between grid items to 20px */
+    margin-top: 20px; /* Adds a margin of 20px on top of the container */
+  }
 
 .contact h3{
     color: #0e3959;
@@ -58,6 +57,7 @@ body{
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
+
 /* Form */
 .formbox{
     position: relative;
@@ -110,6 +110,9 @@ body{
 .inputbox ::placeholder{
     color: #999;
 }
+/* .inputbox :hover{
+    color: rgb(87, 10, 51);
+} */
 
 /* Info */
 
@@ -119,7 +122,6 @@ body{
 .info h3{
     color: #fff;
 }
-
 .info .infoBox div{
     display: flex;
     align-items: center;
@@ -148,10 +150,12 @@ body{
 .sci{
     margin-top: 40px;
     display: flex;
+    align-items: left;
+    justify-content: left;
 }
 .sci li{
     list-style: none;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 .sci li a{
     font-size: 2em;
@@ -169,7 +173,6 @@ body{
 }
 
 /* Responsive Design */
-
 @media(max-width : 991px)
 {
     body{

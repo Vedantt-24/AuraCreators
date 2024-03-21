@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,48 +10,54 @@
 </head>
 <body>
     <div class="contactUs">
+
         <div class="title">
             <h2>Get In Touch</h2>
         </div>
 
         <div class="box">
+            
             <!-- Form -->
             <div class="contact form">
                 <h3>Send a Message</h3>
-                <form>
+
+                <form action="connect.php" method="post">
+
                     <div class="formbox">
+
                         <div class="row50">
+
                             <div class="inputbox">
                                 <span>First Name</span>
-                                <input type="text" placeholder="john">
+                                <input type="text" placeholder="john" id="firstName" name="firstName">
                             </div>
                             <div class="inputbox">
                                 <span>Last Name</span>
-                                <input type="text" placeholder="doe">
+                                <input type="text" placeholder="doe" id="lastName" name="lastName">
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputbox">
                                 <span>Email</span>
-                                <input type="text" placeholder="johndoe@gmail.com">
+                                <input type="text" placeholder="johndoe@gmail.com" id="email" name="email">
                             </div>
                             <div class="inputbox">
-                                <span>Mobile</span>
-                                <input type="text" placeholder="+91 808 085 0046">
+                                <span>Phone Number</span>
+                                <input type="text" placeholder="+91 808 085 0046" id="number" name="number">
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputbox">
                                 <span>Message</span>
-                                <textarea placeholder="Write your message here.."></textarea>
+                                <textarea placeholder="Write your message here.." id="message" name="message"></textarea>
                             </div>
                         </div>
 
                         <div class="row100">
                             <div class="inputbox">
-                                <input type="submit" value="Send">
+                                <input type="submit" value="Send" id="submit">
                             </div>
                         </div>
 
